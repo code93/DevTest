@@ -14,7 +14,7 @@ from devtest import settings
 import pandas as pd
 
 def send_email(request, message,html_message):
-    send_email_fun.delay("Python Assignment - Shubham Birmi", message, settings.EMAIL_HOST_USER, "shubhambirmi@hotmail.com",html_message)
+    send_email_fun.delay("Python Assignment - Shubham Birmi", message, settings.EMAIL_HOST_USER, "tech@themedius.ai",html_message)
     return HttpResponse("Sent Email Successfully...Check your mail please")
 
 def query_view(request):
